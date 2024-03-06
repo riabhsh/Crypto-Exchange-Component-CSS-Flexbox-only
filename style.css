@@ -1,0 +1,356 @@
+/* Om Namah Shivay */
+/* https://www.github.com/riabhsh/ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    font-size: 10px;
+  }
+  
+  body {
+    font-family: prompt, Arial;
+    line-height: 1.5;
+    background-color: rgb(83,79,255);
+background: radial-gradient(circle, rgba(83,79,255,1) 0%, rgba(27,24,136,1) 100%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0rem;
+  }
+
+  
+
+  /* https://css.gg/arrow-top-right */
+  .gg-arrow-top-right {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid;
+    transform: scale(var(--ggs,1));
+    border-right: 2px solid
+}
+  .gg-arrow-top-right::after {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 14px;
+    height: 2px;
+    background: currentColor;
+    transform: rotate(-45deg);
+    top: 3px;
+    right: -3px
+}
+
+/* COLORS */
+:root{
+  --dark: #182122;
+  --Blue: #534fff;
+  --lblue: #c1bffd;
+  --green: #ccf888;
+  --grey: #676767; 
+  --light:rgb(231, 231, 231);
+  --bg: white;
+}
+
+
+.main-container{
+/*   background-color: var(--bg); */
+  width: 40rem;
+  height: 100rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  gap: 2rem;
+}
+
+h2{
+/*   color: rgb(0, 0, 0); */
+  color: white;
+  font-weight: 300;
+  font-size: 3rem;
+  margin-top: 6rem;
+  text-shadow: 1px 3px 20px 0px #00000042;
+}
+
+.name{
+  font-weight: 500;
+}
+
+/* + PROFILE Main-Container 1 + */
+
+.profile{
+  max-width: 37.5rem;
+  min-width: 37.5rem;
+  padding: 4rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.1rem;
+  background-color: var(--light);
+  border-radius: 4rem;
+
+  margin-bottom: 1rem;
+  box-shadow: 1px 3px 20px 0px #00000042;
+}
+
+/* Profile pic */
+.img-container{
+  border-radius: 50%; 
+  /* background-color: pink; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.img{
+  width: 18rem;
+  height: 18rem;
+  padding: 0.4rem; 
+  border-radius: 50%;
+  border: 10px dashed var(--Blue); 
+}
+
+.total-balance{
+  color: var(--grey);
+  font-weight: 500;
+  font-size: 1.9rem;
+
+  margin-top: 1.2rem;
+}
+
+.balance{
+  font-weight: 550;
+  font-size: 3.5rem;
+}
+
+.upordown-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.upordown{
+  padding: 0.2rem 0.6rem;
+  border-radius: 1rem;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.up-right{
+  scale: 1.5;
+}
+
+.icon{
+  padding: 1rem;
+  padding-left: 1.4rem;
+  padding-bottom: 1.5rem;
+  border-radius: 50%;
+  background-color: var(--green);
+}
+
+.up{
+  background-color: var(--green);
+}
+
+
+
+
+/* + BUY-SELL Main-Container 2 + */
+
+.buy-sell{
+  max-width: 37.5rem;
+  min-width: 37.5rem;
+  padding: 4rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background-color: var(--light);
+  border-radius: 4rem;
+  box-shadow: 1px 3px 20px 0px #00000042;
+}
+
+/* Container 1*/
+.btns{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Container 2 */
+.coins{
+  
+}
+
+/* Container 3 */
+.amount{
+}
+
+/* Container 4 */
+.buy{
+  width: 100%;
+}
+
+/* BUTTONS */
+.btn{
+  color: black;
+  border: 0.1rem solid black;
+  background-color: white;
+  border-radius: 12rem;
+  padding: 0.5rem 1.8rem;
+  font-size: 2rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn:hover{
+  background-color: black;
+  border: 0.1rem solid black;
+  color: white;
+}
+
+.selected{
+  background-color: black;
+  border: 0.1rem solid black;
+  color: white;
+}
+
+/* BUY-SELL CONTAINERS */
+.buy-sell_containers{
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.1rem;
+}
+
+.buy-sell_container{
+  width: 100%;
+  background-color: white;
+  border-radius: 0.4rem;
+}
+
+.buy-sell_title{
+  font-size: 2rem;
+}
+
+
+/* COINS */
+.buy-sell_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.coins-select{
+ flex:1;
+ padding: 1rem;
+ border: none;
+ font-size: 1.9rem;
+ font-weight: 600;
+ background-color: white;
+ margin-right: 1.8rem;
+}
+
+select{
+  outline: none;
+  padding: 1rem;
+  border: none;
+  font-size: 1.9rem;
+  font-weight: 600;
+}
+
+option{
+  padding: 1rem;
+  border: none;
+ font-size: 1.9rem;
+ font-weight: 600;
+}
+
+.enter-amount{
+  border: none;
+  font-size: 2rem;
+  font-weight: 450;
+  /* background-color: red; */
+  width: 70%;
+  outline: none;
+  padding: 1rem 0;
+
+}
+
+.currency{
+  /* width: 25%; */
+  padding: 0.7rem 1rem;
+  font-size: 1.6rem;
+  padding-left: 0;
+  padding-right: 2px;
+}
+
+.currency:select{
+
+}
+
+/* TOTAL and BUY */
+.buy{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.buy-total{
+  /* background-color: pink; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.total{
+  font-size: 2.2rem;
+  font-weight: 300;
+  color: rgb(0, 0, 0);
+}
+.total-amount{
+  font-size: 2rem;
+  font-weight: 450;
+}
+
+.buy-crypto{
+  font-size: 1.8rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  border: 0.15rem solid black;
+  width: 100%;
+  padding: 1.5rem;
+  background-color: black;
+  color: white;
+}
+
+.buy-crypto:hover{
+  color: black;
+  background-color: white;
+  border: 0.15rem solid black;
+}
+
+
+
+
+

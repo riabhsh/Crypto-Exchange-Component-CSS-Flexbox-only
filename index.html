@@ -1,0 +1,80 @@
+<!-- Om Namah Shivay  -->
+<!-- https://www.github.com/riabhsh/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Crypto Exchange Component</title>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        
+        <link href='https://unpkg.com/css.gg@2.0.0/icons/css/arrow-top-right.css' rel='stylesheet'>
+    
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body>
+        <section class="main-container">
+            <h2>Welcome Back, <Strong class="name">Rishabh!</Strong></h2>
+            
+            <section class="profile">
+                <figure class="img-container"><img src="https://avatars.githubusercontent.com/u/102209031?v=4" alt="profile" class="img"></figure>
+                <h3 class="total-balance">Total Balance</h3>
+                <h4 class="balance">$15,453.05</h4>
+                <div class="upordown-container">
+                    <p class="upordown up">+12.34%</p>
+                    <!-- https://css.gg/arrow-top-right -->
+                    <span class="icon"><p class="gg-arrow-top-right up-right"></p></span>
+                </div>
+            </section>
+        
+            <section class="buy-sell">
+                <div class="btns">
+                    <button class="btn selected">Buy</button>
+                    <button class="btn">Sell</button>
+                    <button class="btn">Exchange</button>
+                </div>
+                
+                <div class="coins buy-sell_containers">
+                    <p class="coin buy-sell_title">Coin</p>
+                    
+                    <div class="buy-sell_container">
+                        <select name="coins" id="coins" class="coins-select">
+                            <option value="Bitcoin">Bitcoin <span class="short">BTC</span></option> 
+                            <option value="Etherium">Etherium <span class="short">ETH</span></option>
+                            <option value="Solana">Solana <span class="short">SOL</span></option>
+                            <option value="Tether">Tether <span class="short">USDT</span></option>
+                        </select>
+                    </div>
+                </div>
+        
+                <div class="amount buy-sell_containers">
+                    <p class="amount buy-sell_title">Amount</p>
+                    
+                    <div class="buy-sell_container">
+                        <input type="text" class="enter-amount" value="$1,342.00">
+        
+                        <select name="currency" id="currency" class="currency">
+                            <option value="USD">USD</option>
+                            <option value="INR">INR</option>
+                            <option value="EUR">EUR</option>
+                            <option value="JPY">JPY</option>
+                        </select>
+                    </div>
+                </div>
+        
+                <div class="buy">
+                    <div class="buy-total">
+                        <p class="total">Total:</p>
+                        <p class="total-amount">$1,342.00</p>
+                    </div>
+                    <button class="buy-crypto btn">Buy Bitcoin</button>
+                </div>
+            </section>
+        </section>
+    </body>   
+</html>
