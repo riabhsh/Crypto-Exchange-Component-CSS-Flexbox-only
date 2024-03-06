@@ -1,4 +1,4 @@
-# Crypto Exchange Component(CSS Flexbox Only)
+# ₿ Crypto Exchange Component(CSS Flexbox Only)
 Beautiful Crypto Exchange Component with Only CSS Flexbox.
 
 ## Preview
